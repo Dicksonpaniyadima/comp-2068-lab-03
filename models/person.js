@@ -1,4 +1,3 @@
-const people = require("../routes/people");
 
 let persons = [{
     id: "40120",

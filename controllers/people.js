@@ -21,7 +21,6 @@ exports.documentation = (req, res) => {
     }
 };
 
-
   exports.show = async (req, res, next) => {
     try {
       const person = await Person.findById(req.params.id);
