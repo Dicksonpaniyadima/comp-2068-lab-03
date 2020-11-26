@@ -1,4 +1,5 @@
 const Person = require('../models/person');
+
 exports.documentation = (req, res) => {
     res.status(200).json([
       {
@@ -12,6 +13,7 @@ exports.documentation = (req, res) => {
     ]);
   };
 
+
   exports.index = async (req, res, next) => {
     try {
         const people = await Person.find();
@@ -20,6 +22,7 @@ exports.documentation = (req, res) => {
         next(error);
     }
 };
+
 
   exports.show = async (req, res, next) => {
     try {
